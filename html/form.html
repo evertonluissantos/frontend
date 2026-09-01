@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form method="post" action="/submit">
+      <div>
+        <label for="fullName">Nome completo</label>
+        <input id="fullName" name="fullName" type="text" required />
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <div>
+        <label for="birthDate">Data de nascimento</label>
+        <input id="birthDate" name="birthDate" type="date" required />
+      </div>
+
+      <div>
+        <label for="password">Senha</label>
+        <input id="password" name="password" type="password" minlength="6" required />
+      </div>
+
+      <div>
+        <label>Gênero</label>
+        <div>
+          <input id="male" name="gender" type="radio" value="Masculino" />
+          <label for="male">Masculino</label>
+        </div>
+
+        <div>
+          <input id="female" name="gender" type="radio" value="Feminino" />
+          <label for="female">Feminino</label>
+        </div>
+      </div>
+
+      <div>
+        <input id="other" name="gender" type="radio" value="Outro" />
+        <label for="other">Outro</label>
+      </div>
+
+      <div>
+        <label>Pet</label>
+        <div>
+          <input id="dog" name="dog" type="checkbox" />
+          <label for="dog">Cachorro</label>
+        </div>
+
+        <div>
+          <input id="cat" name="cat" type="checkbox" />
+          <label for="cat">Gato</label>
+        
+      </div>
+
+      <div>
+        <label>Carro</label>
+        <select name="car">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Sobre mim</label>
+      </div>
+
+      <div>
+        <textarea name="aboutMe" rows="4" cols="50"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
+</html>
